@@ -3,7 +3,6 @@ import { useState } from "react";
 
 export function NewTodo({ id, setTodos }) {
     const [title, setTitle] = useState('');
-    const [description, setDescription] = useState('');
 
     return <div className="flex flex-col items-center">
         <input className="mt-4 mb-2 h-10 w-64 bg-sky-100 text-black border-solid border-2 border-lime-600" placeholder="to-do..." onChange={(e) => {
