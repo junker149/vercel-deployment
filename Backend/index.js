@@ -9,6 +9,10 @@ app.use('/todo', TodoRouter);
 app.use(bodyParser.json())
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.send("Hello World");
+})
+
 app.post('/signup', async (req, res) => {
     try {
         const username = req.body.username;
