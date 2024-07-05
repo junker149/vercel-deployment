@@ -21,7 +21,7 @@ export function Signup() {
                     setPassword(e.target.value);
                 }}></input>
                 <button className="border-solid border-2 border-sky-800 bg-slate-900 w-28 hover:bg-slate-950 mt-4" onClick={() => {
-                    axios.post('http://localhost:3000/signup', {
+                    axios.post('https://vercel-deployment-backend-orcin.vercel.app/signup', {
                         username: username,
                         password: password
                     }).then(() => {

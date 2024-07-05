@@ -14,7 +14,7 @@ export function UserTodos() {
         // Fetch user todos and name
         const fetchUserTodos = async () => {
             try {
-                const res = await axios.get(`http://localhost:3000/${id}`);
+                const res = await axios.get(`https://vercel-deployment-backend-orcin.vercel.app/${id}`);
                 setTodos(res.data.user_todos);
                 setName(res.data.name);
             } catch (err) {

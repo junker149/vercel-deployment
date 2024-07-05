@@ -10,11 +10,11 @@ export function NewTodo({ id, setTodos }) {
             setTitle(e.target.value);
         }}></input>
         <button className="my-4 w-28 border-solid border-2 border-sky-800 bg-slate-900 shadow-2xl hover:bg-slate-950 p-1" onClick={() => {
-            axios.post(`http://localhost:3000/todo/newTodo`, {
+            axios.post(`https://vercel-deployment-backend-orcin.vercel.app/newTodo`, {
                 title: title,
                 user_id: id
             }).then(() => {
-                axios.get(`http://localhost:3000/${id}`)
+                axios.get(`https://vercel-deployment-backend-orcin.vercel.app/${id}`)
                     .then((res) => {
                         setTodos(res.data.user_todos);
                     })
