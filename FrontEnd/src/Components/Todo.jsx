@@ -4,7 +4,7 @@ export function Todo({ id, user_id, title, setTodos }) {
     return <div className="my-4 h-6 flex mx-4 justify-between">
         <div className="bg-lime-400 text-black w-auto mr-8 truncate pt-1 pb-1 rounded-lg h-max px-4 border-solid border-2 border-lime-500">{title}</div>
         <button className="bg-red-500 rounded-xl w-8 h-8 p-1 text-center shadow shadow-black active:shadow-none" onClick={() => {
-            axios.post("https://vercel-deployment-backend-orcin.vercel.app/delTodo", {
+            axios.post("https://vercel-deployment-backend-orcin.vercel.app/todo/delTodo", {
                 id: id,
                 user_id: user_id
             }).then((res) => {
