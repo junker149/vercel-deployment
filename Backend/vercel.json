@@ -3,10 +3,10 @@
     "builds": [{"src": "./index.js", "use":"@vercel/node"}],
     "routes": [{"src": "/(.*)", "dest":"/"}],
     "rewrites": [
-        { "src": "/signup", "dest": "/index.js" },
-        { "src": "/login", "dest": "/index.js" },
-        { "src": "/:id", "dest": "/index.js" },
-        { "src": "/todo", "dest": "/index.js" },
-        { "src": "/(.*)", "dest": "/" }
+        { "source": "/signup", "destination": "/index.js" },
+        { "source": "/login", "destination": "/index.js" },
+        { "source": "/:id", "destination": "/index.js" },
+        { "source": "/todo", "desinationt": "/index.js" },
+        { "source": "/(.*)", "destination": "/" }
   ]
 }
