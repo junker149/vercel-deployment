@@ -25,7 +25,7 @@ export function UserTodos() {
         fetchUserTodos();
     }, [todos]);
 
-    return <div className="absolute top-0 z-[-2] h-auto w-auto bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] p-8">
+    return <div className="absolute top-0 z-[-2] h-max w-max bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] p-8">
         <div className=''>
             <div className='m-4'><Title></Title></div>
 
